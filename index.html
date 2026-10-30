@@ -331,7 +331,7 @@ WORK.forEach((w,i)=>{
       <div class="tags">${w.tags.map(t=>`<span>${t}</span>`).join('')}</div>
     </div>
     <div class="panel-r">
-      <div class="trace-h mono"><span>run.trace</span><b>● live</b></div>
+      <div class="trace-h mono"><span>How it runs</span></div>
       <ol class="trace">${w.trace.map(([k,v])=>`<li class="${k==='ok'?'ok':''}"><span><span class="k">${k==='ok'?'':k+' '}</span>${v}</span></li>`).join('')}</ol>
       <div class="foot mono"><span>${w.tag}</span>${w.link?`<a href="${w.link.href}">${w.link.t}</a>`:''}</div>
     </div>`;
